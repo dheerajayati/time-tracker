@@ -1,10 +1,12 @@
 FROM openjdk:11 as build
 
-ARG WAR_FILE=build/libs/time-tracker-web-0.5.0-SNAPSHOT.war
+EXPOSE 8080
 
-COPY $(WAR_FILE) app.war
+COPY ./build/libs/time-tracker-web-0.5.0-SNAPSHOT.war /usr/app/
 
-ENTRYPOINT ["java", "-jar", "/app.war"]
+WORKDIR /usr/app
+
+ENTRYPOINT ["java", "-jar","time-tracker-web-0.5.0-SNAPSHOT.war"]
 
 
 
