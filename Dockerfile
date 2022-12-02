@@ -2,7 +2,7 @@ FROM openjdk:11
 
 EXPOSE 8080
 
-COPY ./time-tracker /usr/app/
-WORKDIR /usr/app
+COPY ./time-tracker /tmp
+WORKDIR /tmp
 
-ENTRYPOINT ["java", "-jar", "time-tracker"]
+
