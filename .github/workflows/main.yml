@@ -26,6 +26,6 @@ jobs:
         with:
           image: dheerajayati91/time-tracker
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: dheerajayati91
+          password: Docker@310
           tag: time-trackerv1
