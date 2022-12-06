@@ -9,7 +9,10 @@ on:
       - master
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:
+      - self-hosted
+      - label-1
+      - label-2
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
@@ -34,4 +37,4 @@ jobs:
           registry: docker.io
           username: dheerajayati91
           password: Docker@310
-          tag: time-trackerv1
+          tag: time-trackerv2
