@@ -1,4 +1,4 @@
-FROM FROM tomcat:latest
+FROM tomcat:latest
 LABEL maintainer="Dheeraj Ayati"
 EXPOSE 8080
 RUN mkdir target
